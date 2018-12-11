@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Celeb Tastic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/styles.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div id="button-div">
+                    <button data-person="Emma Stone">Emma Stone</button>
+                    <button data-person="Ryan Gosling">Ryan Gosling</button>
+                    <button data-person="Simon Cowell">Simon Cowell</button>
+                    <button data-person="Gina Rodriguez">Gina Rodriguez</button>
+                    <button data-person="Yael Grobglas">Yael Grobglas</button>
+                    <button data-person="Chrissy Teigan">Chrissy Teigan</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10">
+                <div id="giphy-div"></div>
+                <!--giphys will appear here-->
+            </div>
+            <div class="col-md-2">
+                <!--Form to add more-->
+                <form>
+                    <div class="form-group">
+                        <label for="Celeb-input">Add another celebrity</label>
+                        <input type="text" class="form-control" id="add-more" aria-describedby="emailHelp" placeholder="Add button & GIFS">
+                    </div>
+                    <button type="submit" id = "add-button" class="btn btn-primary add-user">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <form>
+
+    </form>
+    <script src="./js/logic.js"></script>
+
+</body>
+
+</html>
