@@ -1,11 +1,20 @@
 console.log("No button clicked yet");
 
+
+var celebArr = ["Emma Watson", "Ariana Grande", " Chrissy Teigan", "Emma Stone","Ryan Gosling","Daniel Radcliffe","Ellen Degeneres","Simon Cowell"];
+for(var i = 0; i < celebArr.length; i++)
+{
+    $("#button-div").append("<button type='button' onclick=(\"" + celebArr[i] + "\")' class='btn btn-primary' value=' " + celebArr[i] + "'> " + celebArr[i] + " </button>");
+
+}
+
 $("button").on("click", function() {
     $("#giphy-div").empty();
 
     console.log("Button clicked");
     // Grabbing and storing the data-animal property value from the button
-    var celeb = $(this).attr("data-person");
+    var celeb = $(this).text();
+
 
     // Constructing a queryURL using the animal name
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
@@ -52,6 +61,8 @@ $("button").on("click", function() {
 
   $("#add-button").on("click", function(event) {
       console.log("Submit has been pressed");
-        var newButton = $("<button>").text(add-more.val().trim());
-
-  });
+        var buttontxt = add-more.val().trim();
+        console.log(buttontxt);
+        var newsubmit = $("<button>").text(buttontxt);
+        
+  }); 
