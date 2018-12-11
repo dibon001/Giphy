@@ -4,7 +4,7 @@ console.log("No button clicked yet");
 var celebArr = ["Emma Watson", "Ariana Grande", " Chrissy Teigan", "Emma Stone","Ryan Gosling","Daniel Radcliffe","Ellen Degeneres","Simon Cowell"];
 for(var i = 0; i < celebArr.length; i++)
 {
-    $("#button-div").append("<button type='button' onclick=(\"" + celebArr[i] + "\")' class='btn btn-primary' value=' " + celebArr[i] + "'> " + celebArr[i] + " </button>");
+    $("#button-div").append("<button type='button' onclick=(\"" + celebArr[i] + "\")' class='btn btn-reset' value=' " + celebArr[i] + "'> " + celebArr[i] + " </button>" + "  ");
 
 }
 
@@ -62,6 +62,7 @@ $("button").on("click", function() {
   $("#add-button").on("click", function(event) {
       console.log("Submit has been pressed");
         var buttontxt = add-more.val().trim();
+        console.log
         console.log(buttontxt);
         var newsubmit = $("<button>").text(buttontxt);
         
